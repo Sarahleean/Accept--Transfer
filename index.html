@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accept Transfer</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./loader.css">
+    <link rel="stylesheet" href="./inputwindow.css">
+    <link rel="stylesheet" href="./Compress-fontawesome-free-6.7.2-web/css/all.min.css">
+    <!-- <link rel="icon" href="./images/Page_icon/emopty2.png"> -->
+    <link rel="SHORTCUT ICON" href="https://support.tixr.com/hubfs/favicon-32x32.png">
+</head>
+
+<body>
+    <div id="App-Box">
+        <header>
+            <img src="./images/logo2.png" alt="TIXR">
+            <div class="TopLeft-nav">
+                <span>TT</span>
+                <!-- <i class="fa fa-align-right"></i> -->
+                <img class="fa-align-right-IMG" src="./images/nav_icons/Tixr_align-Left.png" alt="Left">
+            </div>
+        </header>
+
+        <div id="overlayBackground">
+            <section id="AcceptedBox">
+                <div>
+                    <p id="TransferID">Status: <span>Accepted</span></p>
+                    <div class="successIcon-Container">
+                        <!-- <i class="fa fa-check successIcon"></i> -->
+                        <div id="svg-Container">
+                            <svg class="checkmark" viewBox="0 0 52 52">
+                                <path class="checkmark-path" fill="none" stroke-width="4" stroke="#4CAF50"
+                                    d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="SuccessMsg">Your Weekend 1 Hotel Package/VIP Combo upgrade ticket transfer has been accepted
+                        successfully.<br>You will receive your ticket in less than 24hrs.</p>
+
+                    <div id="ClientInfo">
+                        <p>Name: Tuan Ta</p>
+                        <p>Email: tatuan18@yahoo.com</p>
+                    </div>
+
+                    <div id="FAQLinkContainer">
+                        <a id="FAQLink" href="https://www.tixr.com/rewards/faq">Questions? FAQs and Live Chat here</a>
+                    </div>
+
+                    <div class="BelowTix-info">
+                        <p>
+                        <h3>1x</h3>Weekend 1 Saguaro | Pool Facing Balcony | King Bed with 2 VIP Combo Passes for 2 Person</p>
+                        <br>
+                        <p>
+                        <h3>2x</h3>Weekend 1 Hotel Package VIP Combo Upgrade (Pool Pass + VIP After Hours) </p>
+                    </div>
+                    
+
+                    <div id="closeBTN-One">Close</div>
+                </div>
+            </section>
+        </div>
+
+        <div id="inputiDAccess-window">
+            <p id="AccessiDTop">Transfer ID required</p>
+            <div class="input-group">
+                <!-- <input type="text" class="input-field" placeholder=" "> -->
+                 <input type="text" id="email-input" class="input-field" placeholder=" ">
+                 <label for="input-field">Receipient Email</label>
+                </div>
+                <div class="input-group">
+                    <!-- <input type="text" class="input-field-Two" placeholder=" "> -->
+                    <input type="text" id="id-input" class="input-field-Two" placeholder=" ">
+                <label for="input-field">Transfer ID</label>
+            </div>
+
+            <div>
+                <p id="status">incorrect info!</p>
+                <p>By inputing your transfer ID, you would be allowed to accept transferred tickets in
+                    accordance with their terms.</p>
+            </div>
+
+            <div id="liscenseAgreement">
+                <div id="checkArea">
+                    <input id="checkboxiD" type="checkbox">
+                    <p>I have read and agree to the <a href="https://creators.tixr.com/terms-of-service"><span>Terms of
+                                Service</span></a> and the <a
+                            href="https://creators.tixr.com/privacy-policy"><span>Privacy
+                                Policy.</span></a></p>
+                </div>
+
+                <div>
+                    <p id="continueBTN">Accept Transfer</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <script src="./accept.js"></script>
+</body>
+
+</html>

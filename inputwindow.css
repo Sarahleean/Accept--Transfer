@@ -1,0 +1,173 @@
+/* input area */
+
+#inputiDAccess-window.VibrateShakeInputWindow {
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    10% {
+        transform: translate(calc(-50% - 10px), -50%) scale(1.05);
+    }
+    20% {
+        transform: translate(calc(-50% + 10px), -50%) scale(1.05);
+    }
+    30% {
+        transform: translate(calc(-50% - 10px), -50%) scale(1.05);
+    }
+    40% {
+        transform: translate(calc(-50% + 10px), -50%) scale(1.05);
+    }
+    50% {
+        transform: translate(calc(-50% - 10px), -50%) scale(1.05);
+    }
+    60% {
+        transform: translate(calc(-50% + 10px), -50%) scale(1.05);
+    }
+    70% {
+        transform: translate(calc(-50% - 10px), -50%) scale(1.05);
+    }
+    80% {
+        transform: translate(calc(-50% + 10px), -50%) scale(1.05);
+    }
+    90% {
+        transform: translate(calc(-50% - 10px), -50%) scale(1.05);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+#inputiDAccess-window {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 18%);
+    padding: 14px;
+    width: 90%;
+    max-width: 380px;
+    border-radius: 22px;
+    z-index: 2;
+    /* box-shadow: 0 0 12px hsl(0, 0%, 50%); */
+    display: block;
+}
+
+#inputiDAccess-window #AccessiDTop {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+#inputiDAccess-window .input-group {
+    position: relative;
+}
+
+#inputiDAccess-window .input-group input {
+    width: 100%;
+    padding: 20px 12px 10px;
+    border: 3px solid hsl(209, 100%, 50%);
+    box-shadow: 0px 0px 6px hsl(209, 100%, 70%);
+    font-size: 16px;
+    border-radius: 8px;
+    margin: 20px 0 6px;
+    outline: none;
+    transition: 0.2s ease-in-out;
+}
+
+#inputiDAccess-window .input-group label {
+    position: absolute;
+    font-weight: bold;
+    top: 50%;
+    transform: translateY(-17%);
+    left: 12px;
+    transition: 0.2s ease-in-out;
+    pointer-events: none;
+    color: hsl(0, 0%, 30%);
+}
+
+#inputiDAccess-window .input-group input:focus+label,
+#inputiDAccess-window .input-group input:not(:placeholder-shown)+label {
+    font-size: 14px;
+    transform: translate(0, -16px);
+}
+
+#inputiDAccess-window #status {
+    margin: 4px 0 20px;
+    color: hsl(0, 100%, 60%);
+    display: none;
+}
+
+#inputiDAccess-window #liscenseAgreement #checkArea {
+    font-size: 14px;
+    display: flex;
+    margin: 20px 0;
+}
+
+#inputiDAccess-window #checkArea #checkboxiD {
+    width: 24px;
+    max-width: 24px;
+    min-width: 24px;
+    height: 24px;
+    max-height: 24px;
+    min-height: 24px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    margin: 0 8px 8px;
+    appearance: none;
+    -webkit-appearance: none;
+    position: relative;
+}
+
+#inputiDAccess-window #checkArea #checkboxiD:checked {
+    background-color: green;
+}
+
+#inputiDAccess-window #checkArea #checkboxiD:checked::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 9px;
+    border: solid hsl(0, 0%, 98%);
+    border-width: 0 3px 3px 0;
+    left: 37%;
+    top: 18%;
+    transform: translate(-50%, -50%);
+    transform: rotate(45deg);
+    outline: none;
+}
+
+#inputiDAccess-window #checkArea p {
+    margin-top: 2px;
+}
+
+#inputiDAccess-window #checkArea #liscenseAgreement a {
+    color: rgb(0, 132, 255);
+}
+
+#inputiDAccess-window #checkArea span {
+    color: rgb(0, 132, 255);
+    text-decoration: underline rgb(0, 132, 255);
+}
+
+#continueBTN {
+    background-color: rgb(0, 132, 255);
+    color: hsl(0, 0%, 98%);
+    padding: 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 40px 0 0;
+    transition: 0.2s ease-in-out, cursor 0.2s ease-in-out;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
